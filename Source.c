@@ -18,7 +18,7 @@ int main()
 	int sum = num1 + num2;
 	int difference = num1 - num2;
 	int product = num1 * num2;
-	float quotient = (float)num1 / (double)num2;
+	float quotient = (float)num1 / (float)num2;
 	int modulus = num1 % num2;
 	float avg = (float)sum / 2;
 
