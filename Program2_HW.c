@@ -55,9 +55,9 @@ int main()
 	float raiseamount2 = yincome2 * (raisep2 / 100);
 	float newpay2 = yincome2 + raiseamount2;
 
-	totalCincome = yincome1 + yincome2;
-	totalRamount = raiseamount1 + raiseamount2;
-	totalNewpay = newpay1 + newpay2;
+	totalCincome += yincome2;
+	totalRamount += raiseamount2;
+	totalNewpay += newpay2;
 
 	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name2, department2, yincome2, raisep2, raiseamount2, newpay2);
 
@@ -83,9 +83,9 @@ int main()
 	float raiseamount3 = yincome3 * (raisep3 / 100);
 	float newpay3 = yincome3 + raiseamount3;
 
-	totalCincome = yincome1 + yincome2 + yincome3;
-	totalRamount = raiseamount1 + raiseamount2 + raiseamount3;
-	totalNewpay = newpay1 + newpay2 + newpay3;
+	totalCincome += yincome3;
+	totalRamount += raiseamount3;
+	totalNewpay += newpay3;
 
 	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name3, department3, yincome3, raisep3, raiseamount3, newpay3);
 
@@ -111,9 +111,9 @@ int main()
 	float raiseamount4 = yincome4 * (raisep4 / 100);
 	float newpay4 = yincome4 + raiseamount4;
 
-	totalCincome = yincome1 + yincome2 + yincome3 + yincome4;
-	totalRamount = raiseamount1 + raiseamount2 + raiseamount3 + raiseamount4;
-	totalNewpay = newpay1 + newpay2 + newpay3 + newpay4;
+	totalCincome += yincome4;
+	totalRamount += raiseamount4;
+	totalNewpay += newpay4;
 
 	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name4, department4, yincome4, raisep4, raiseamount4, newpay4);
 
@@ -139,9 +139,9 @@ int main()
 	float raiseamount5 = yincome5 * (raisep5 / 100);
 	float newpay5 = yincome5 + raiseamount5;
 
-	totalCincome = yincome1 + yincome2 + yincome3 + yincome4 + yincome5;
-	totalRamount = raiseamount1 + raiseamount2 + raiseamount3 + raiseamount4 + raiseamount5;
-	totalNewpay = newpay1 + newpay2 + newpay3 + newpay4 + newpay5;
+	totalCincome += yincome5;
+	totalRamount += raiseamount5;
+	totalNewpay += newpay5;
 
 	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name5, department5, yincome5, raisep5, raiseamount5, newpay5);
 
