@@ -2,148 +2,138 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+
+	This program will take input of employee data (name, department, current income, raise percentage) and will calculate raise amounts and new total incomes.
+
+	Written by Naji Arnaout
+
+	09/02/2021
+
+*/
+
 int main()
 {
 
+	char name[10];
+	char department[10];
+	float yincome;
+	float raisep;
+
 	//employee 1
 
-	char name1[10];
-	char department1[10];
-	float yincome1;
-	float raisep1;
-
 	printf("What is the employee's first name? ");
-	scanf("%s", name1);
+	scanf("%s", name);
 
 	printf("What department does the employee work in? ");
-	scanf("%s", department1);
+	scanf("%s", department);
 
 	printf("What is the employee's current yearly income? ");
-	scanf("%f", &yincome1);
+	scanf("%f", &yincome);
 
 	printf("What is the raise percentage of the employee? ");
-	scanf("%f", &raisep1);
+	scanf("%f", &raisep);
 
-	float raiseamount1 = yincome1 * (raisep1 / 100);
-	float newpay1 = yincome1 + raiseamount1;
+	float raiseamount = yincome * (raisep / 100);
+	float newpay = yincome + raiseamount;
 
-	float totalCincome = yincome1;
-	float totalRamount = raiseamount1;
-	float totalNewpay = newpay1;
+	float totalCincome = yincome;
+	float totalRamount = raiseamount;
+	float totalNewpay = newpay;
 
-	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name1, department1, yincome1, raisep1, raiseamount1, newpay1);
+	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name, department, yincome, raisep, raiseamount, newpay);
 
 	//employee 2
 
-	char name2[10];
-	char department2[10];
-	float yincome2;
-	float raisep2;
-
 	printf("What is the employee's first name? ");
-	scanf("%s", name2);
+	scanf("%s", name);
 
 	printf("What department does the employee work in? ");
-	scanf("%s", department2);
+	scanf("%s", department);
 
 	printf("What is the employee's current yearly income? ");
-	scanf("%f", &yincome2);
+	scanf("%f", &yincome);
 
 	printf("What is the raise percentage of the employee? ");
-	scanf("%f", &raisep2);
+	scanf("%f", &raisep);
 
-	float raiseamount2 = yincome2 * (raisep2 / 100);
-	float newpay2 = yincome2 + raiseamount2;
+	raiseamount = yincome * (raisep / 100);
+	newpay = yincome + raiseamount;
 
-	totalCincome += yincome2;
-	totalRamount += raiseamount2;
-	totalNewpay += newpay2;
+	totalCincome += yincome;
+	totalRamount += raiseamount;
+	totalNewpay += newpay;
 
-	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name2, department2, yincome2, raisep2, raiseamount2, newpay2);
-
+	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name, department, yincome, raisep, raiseamount, newpay);
+	
 	//employee 3
 
-	char name3[10];
-	char department3[10];
-	float yincome3;
-	float raisep3;
-
 	printf("What is the employee's first name? ");
-	scanf("%s", name3);
+	scanf("%s", name);
 
 	printf("What department does the employee work in? ");
-	scanf("%s", department3);
+	scanf("%s", department);
 
 	printf("What is the employee's current yearly income? ");
-	scanf("%f", &yincome3);
+	scanf("%f", &yincome);
 
 	printf("What is the raise percentage of the employee? ");
-	scanf("%f", &raisep3);
+	scanf("%f", &raisep);
 
-	float raiseamount3 = yincome3 * (raisep3 / 100);
-	float newpay3 = yincome3 + raiseamount3;
+	raiseamount = yincome * (raisep / 100);
+	newpay = yincome + raiseamount;
 
-	totalCincome += yincome3;
-	totalRamount += raiseamount3;
-	totalNewpay += newpay3;
+	totalCincome += yincome;
+	totalRamount += raiseamount;
+	totalNewpay += newpay;
 
-	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name3, department3, yincome3, raisep3, raiseamount3, newpay3);
+	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name, department, yincome, raisep, raiseamount, newpay);
 
 	//employee 4
 
-	char name4[10];
-	char department4[10];
-	float yincome4;
-	float raisep4;
-
 	printf("What is the employee's first name? ");
-	scanf("%s", name4);
+	scanf("%s", name);
 
 	printf("What department does the employee work in? ");
-	scanf("%s", department4);
+	scanf("%s", department);
 
 	printf("What is the employee's current yearly income? ");
-	scanf("%f", &yincome4);
+	scanf("%f", &yincome);
 
 	printf("What is the raise percentage of the employee? ");
-	scanf("%f", &raisep4);
+	scanf("%f", &raisep);
 
-	float raiseamount4 = yincome4 * (raisep4 / 100);
-	float newpay4 = yincome4 + raiseamount4;
+	raiseamount = yincome * (raisep / 100);
+	newpay = yincome + raiseamount;
 
-	totalCincome += yincome4;
-	totalRamount += raiseamount4;
-	totalNewpay += newpay4;
+	totalCincome += yincome;
+	totalRamount += raiseamount;
+	totalNewpay += newpay;
 
-	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name4, department4, yincome4, raisep4, raiseamount4, newpay4);
+	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name, department, yincome, raisep, raiseamount, newpay);
 
 	//employee 5
 
-	char name5[10];
-	char department5[10];
-	float yincome5;
-	float raisep5;
-
 	printf("What is the employee's first name? ");
-	scanf("%s", name5);
+	scanf("%s", name);
 
 	printf("What department does the employee work in? ");
-	scanf("%s", department5);
+	scanf("%s", department);
 
 	printf("What is the employee's current yearly income? ");
-	scanf("%f", &yincome5);
+	scanf("%f", &yincome);
 
 	printf("What is the raise percentage of the employee? ");
-	scanf("%f", &raisep5);
+	scanf("%f", &raisep);
 
-	float raiseamount5 = yincome5 * (raisep5 / 100);
-	float newpay5 = yincome5 + raiseamount5;
+	raiseamount = yincome * (raisep / 100);
+	newpay = yincome + raiseamount;
 
-	totalCincome += yincome5;
-	totalRamount += raiseamount5;
-	totalNewpay += newpay5;
+	totalCincome += yincome;
+	totalRamount += raiseamount;
+	totalNewpay += newpay;
 
-	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name5, department5, yincome5, raisep5, raiseamount5, newpay5);
+	printf("The employee %s who works in %s has a current yearly income of $%f and a raise percentage of %f percent. Their raise amount is $%f and their new pay amount is $%f.\n\n", name, department, yincome, raisep, raiseamount, newpay);
 
 	//totals
 
@@ -152,3 +142,39 @@ int main()
 	return 0;
 
 }
+
+/*
+
+What is the employee's first name? Mike
+What department does the employee work in? accounting
+What is the employee's current yearly income? 66111.54
+What is the raise percentage of the employee? 6.6
+The employee Mike who works in accounting has a current yearly income of $66111.539062 and a raise percentage of 6.600000 percent. Their raise amount is $4363.361328 and their new pay amount is $70474.898438.
+
+What is the employee's first name? Shohei
+What department does the employee work in? marketing
+What is the employee's current yearly income? 89224.17
+What is the raise percentage of the employee? 4.8
+The employee Shohei who works in marketing has a current yearly income of $89224.171875 and a raise percentage of 4.800000 percent. Their raise amount is $4282.760254 and their new pay amount is $93506.929688.
+
+What is the employee's first name? Jared
+What department does the employee work in? management
+What is the employee's current yearly income? 75123.25
+What is the raise percentage of the employee? 7.4
+The employee Jared who works in management has a current yearly income of $75123.250000 and a raise percentage of 7.400000 percent. Their raise amount is $5559.120605 and their new pay amount is $80682.367188.
+
+What is the employee's first name? Anthony
+What department does the employee work in? sales
+What is the employee's current yearly income? 69644.44
+What is the raise percentage of the employee? 5.5
+The employee Anthony who works in sales has a current yearly income of $69644.437500 and a raise percentage of 5.500000 percent. Their raise amount is $3830.444092 and their new pay amount is $73474.882812.
+
+What is the employee's first name? Justin
+What department does the employee work in? management
+What is the employee's current yearly income? 96222.77
+What is the raise percentage of the employee? 3.9
+The employee Justin who works in management has a current yearly income of $96222.773438 and a raise percentage of 3.900000 percent. Their raise amount is $3752.688232 and their new pay amount is $99975.460938.
+
+The total current yearly income of all employees is $396326.187500. The total raise amount for all employees is $21788.373047. The total new pay for all employees is $418114.531250.
+
+*/
