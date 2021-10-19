@@ -6,18 +6,17 @@
 
 int main()
 {
-
 	//random number generator
 
 	int randnb1, randnb2, randnb3, randnb4;
 	time_t t;
 	srand((unsigned)time(&t));
-	randnb1 = rand() % 9 + 1;
-	randnb2 = rand() % 9 + 1;
-	randnb3 = rand() % 9 + 1;
-	randnb4 = rand() % 9 + 1;
+	randnb1 = rand() % 10;
+	randnb2 = rand() % 10;
+	randnb3 = rand() % 10;
+	randnb4 = rand() % 10;
 
-	//printf("%d %d %d %d\n\n", randnb1, randnb2, randnb3, randnb4); (USE THIS TO VIEW GENERATED NB)
+	//printf("%d %d %d %d\n\n", randnb1, randnb2, randnb3, randnb4); (USE THIS TO SEE GENERATED NBS)
 
 	//bet amnount from user
 
