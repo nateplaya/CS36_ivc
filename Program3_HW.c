@@ -26,11 +26,11 @@ int main()
 	{
 		raisep = 8.6;
 	}
-	else if (70000.01 < yincome && yincome < 80000)
+	else if (70000.01 < yincome && yincome <= 80000)
 	{
 		raisep = 7.4;
 	}
-	else if (80000.01 < yincome && yincome < 90000)
+	else if (80000.01 < yincome && yincome <= 90000)
 	{
 		raisep = 5.8;
 	}
@@ -63,11 +63,11 @@ int main()
 	{
 		raisep = 8.6;
 	}
-	else if (70000.01 < yincome && yincome < 80000)
+	else if (70000.01 < yincome && yincome <= 80000)
 	{
 		raisep = 7.4;
 	}
-	else if (80000.01 < yincome && yincome < 90000)
+	else if (80000.01 < yincome && yincome <= 90000)
 	{
 		raisep = 5.8;
 	}
@@ -100,11 +100,11 @@ int main()
 	{
 		raisep = 8.6;
 	}
-	else if (70000.01 < yincome && yincome < 80000)
+	else if (70000.01 < yincome && yincome <= 80000)
 	{
 		raisep = 7.4;
 	}
-	else if (80000.01 < yincome && yincome < 90000)
+	else if (80000.01 < yincome && yincome <= 90000)
 	{
 		raisep = 5.8;
 	}
@@ -137,11 +137,11 @@ int main()
 	{
 		raisep = 8.6;
 	}
-	else if (70000.01 < yincome && yincome < 80000)
+	else if (70000.01 < yincome && yincome <= 80000)
 	{
 		raisep = 7.4;
 	}
-	else if (80000.01 < yincome && yincome < 90000)
+	else if (80000.01 < yincome && yincome <= 90000)
 	{
 		raisep = 5.8;
 	}
@@ -174,11 +174,11 @@ int main()
 	{
 		raisep = 8.6;
 	}
-	else if (70000.01 < yincome && yincome < 80000)
+	else if (70000.01 < yincome && yincome <= 80000)
 	{
 		raisep = 7.4;
 	}
-	else if (80000.01 < yincome && yincome < 90000)
+	else if (80000.01 < yincome && yincome <= 90000)
 	{
 		raisep = 5.8;
 	}
