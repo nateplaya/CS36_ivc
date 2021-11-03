@@ -40,21 +40,19 @@ void print()
 void lnumber()
 {
 
-	// if n1 is greater than n2, n3, and n4, n1 is the largest
-	if (n1 >= n2 && n1 >= n3 && n1 >= n4)
-		printf("\n\n%i is the largest number.\n", n1);
+	//declare local max
+	int max = n1;
 
-	// if n2 is greater than n1, n3, and n4, n2 is the largest
-	else if (n2 >= n1 && n2 >= n3 && n2 >= n4)
-		printf("\n\n%i is the largest number.\n", n2);
+	//if largest number
+	if (n2 > max)
+		max = n2;
+	if (n3 > max)
+		max = n3;
+	if (n4 > max)
+		max = n4;
 
-	// if n3 is greater than n1, n2, and n4, n3 is the largest
-	else if (n3 >= n1 && n3 >= n2 && n3 >= n4)
-		printf("\n\n%i is the largest number.\n", n3);
-
-	// if  above conditions are false, n4 is the largest
-	else
-		printf("\n\n%i is the largest number.\n", n4);
+	//print max value
+	printf("\n\n%i is the largest number.\n", max);
 
 }
 
