@@ -41,15 +41,15 @@ void lnumber()
 {
 
 	// if n1 is greater than n2, n3, and n4, n1 is the largest
-	if (n1 >= n2 && n1 >= n4)
+	if (n1 >= n2 && n1 >= n3 && n1 >= n4)
 		printf("\n\n%i is the largest number.\n", n1);
 
 	// if n2 is greater than n1, n3, and n4, n2 is the largest
-	else if (n2 >= n1 && n2 >= n4)
+	else if (n2 >= n1 && n2 >= n3 && n2 >= n4)
 		printf("\n\n%i is the largest number.\n", n2);
 
 	// if n3 is greater than n1, n2, and n4, n3 is the largest
-	else if (n3 >= n2 && n3 >= n4)
+	else if (n3 >= n1 && n3 >= n2 && n3 >= n4)
 		printf("\n\n%i is the largest number.\n", n3);
 
 	// if  above conditions are false, n4 is the largest
