@@ -31,22 +31,16 @@ void print(int* n1, int* n2, int* n3, int* n4)
 }
 
 //return largest number
-void lnumber(int* n1, int* n2, int* n3, int* n4)
+void lnumber(int* n1, int* n2, int* n3, int* n4, int *max)
 {
 
-	//declare local max
-	int max = *n1;
-
 	//if largest number
-	if (*n2 > max)
-		max = *n2;
-	if (*n3 > max)
-		max = *n3;
-	if (*n4 > max)
-		max = *n4;
-
-	//print max value
-	printf("\n\n%i is the largest number.\n", max);
+	if (*n2 > *max)
+		*max = *n2;
+	if (*n3 > *max)
+		*max = *n3;
+	if (*n4 > *max)
+		*max = *n4;
 
 }
 
@@ -93,14 +87,23 @@ void main()
 	//variable declarations
 	int n1, n2, n3, n4;
 
+	//declare max
+	n1 = 0;
+	int max = n1;
+
 	//declerations for sort
 	int i, j, a, n = 4, number[15];
 
 	load(&n1, &n2, &n3, &n4);
 	print(&n1, &n2, &n3, &n4);
-	lnumber(&n1, &n2, &n3, &n4);
+	lnumber(&n1, &n2, &n3, &n4, &max);
+
+	//print max value
+	printf("\n\n%i is the largest number.\n", max);
+
 	sort(&n1, &n2, &n3, &n4, &number, &i, &n, &j, &a);
 
+	//print values in decending order
 	printf("\n\nDescending order of entered numbers: ");
 
 	for (i = 0; i < n; ++i)
